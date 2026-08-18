@@ -18,14 +18,16 @@ This project was created for a course project (CSC390) to demonstrate how ML tec
 1. Install Python 3.11+ and create a virtual environment (recommended):
 
    python -m venv venv
+   
    source venv/bin/activate
+
    pip install -r requirements.txt
 
-2. Run the monitor against your logs (use `--once` to run a single iteration and exit):
+3. Run the monitor against your logs (use `--once` to run a single iteration and exit):
 
    python ai_ids.py --suricata /path/to/eve.json --zeek-conn /path/to/conn.log --zeek-dns /path/to/dns.log --alert ./alerts.csv
 
-3. Alerts will be appended to `alerts.csv` with columns: timestamp,src_ip,dest_ip,src_port,dest_port,proto,anomaly
+4. Alerts will be appended to `alerts.csv` with columns: timestamp,src_ip,dest_ip,src_port,dest_port,proto,anomaly
 
 ## Docker
 
